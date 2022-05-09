@@ -39,7 +39,7 @@ export default function Search(){
                 <input value={text} placeholder='Start typing' onChange={handleChange} type="text" name="text" id="text" />
                 <button type="submit">Search</button>
             </form>
-            <div className="display" ref={display} style={{margin: 20+'px'}}>
+            <div className="display container m-4 bg-secondary" ref={display}>
                 Hello Search
             </div>
         </React.Fragment>
