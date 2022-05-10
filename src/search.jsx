@@ -24,7 +24,7 @@ export default function Search(){
     const Find = async(e) => {
         // e = new RegExp(e)
         // return words.filter((x)=>x.match(e))
-        await fetch(`https://api.wordreference.com/2012/autocomplete/autocomplete.aspx?dict=enes&query=${e}`)
+        await fetch(`https://www.oxfordlearnersdictionaries.com/autocomplete/english/?q=${e}&contentType=application/json;`)
         .then(res => res.text())
         .then(data => {
             sank(data)
