@@ -25,7 +25,7 @@ export default function Search(){
         // e = new RegExp(e)
         // return words.filter((x)=>x.match(e))
         await fetch(`https://www.oxfordlearnersdictionaries.com/autocomplete/english/?q=${e}&contentType=application/json;`)
-        .then(res => res.text())
+        .then(res => res.json())
         .then(data => {
             sank(data)
             return data
